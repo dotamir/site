@@ -1,6 +1,6 @@
 {
-  "name": "leo",
-  "version": "1.8.5",
+  "name": "dotamir",
+  "version": "0.0.1",
   "scripts": {
     "dev": "next",
     "build": "next build",
@@ -9,7 +9,7 @@
     "precommit": "lint-staged"
   },
   "license": "MIT",
-  "repository": "leo/site",
+  "repository": "dotamir/site",
   "babel": {
     "presets": [
       "next/babel"
@@ -49,13 +49,15 @@
     ]
   },
   "now": {
-    "alias": "leo.im"
+    "alias": "dotam.ir"
   },
   "dependencies": {
     "is-absolute-url": "2.1.0",
     "markdown-in-js": "1.1.3",
     "moment": "2.19.1",
+    "moment-jalaali": "0.7.2",
     "next": "4.1.4",
+    "now": "8.4.0",
     "nprogress": "0.2.0",
     "prop-types": "15.6.0",
     "react": "16.0.0",

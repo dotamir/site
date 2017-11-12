@@ -1,145 +1,153 @@
+// Helpers
+import moment from 'moment'
+import momentJal from 'moment-jalaali'
+momentJal.loadPersian({ usePersianDigits: true, dialect: 'persian-modern' })
+
 // Components
 import Link from 'next/link'
 import Title from '../components/title'
+import Back from '../components/back'
 
 // Layouts
 import Page from '../layouts/page'
+
+// Other
+import posts from '../data/essays'
+
+const parseDate = date => moment(date, 'DD/MM/YYYY')
+const parseJalaali = date => momentJal(date, 'YYYY/jM/jD')
+
+// Assign a URL to each post and
+// sort them by date (most recent one first)
+const preparePosts = () =>
+  posts
+    .map(post =>
+      Object.assign(
+        {
+          url: `/${parseDate(post.date).year()}/${post.id}`
+        },
+        post
+      )
+    )
+    .sort((a, b) => parseDate(b.date).diff(parseDate(a.date)))
 
 export default () => (
   <Page>
     <Title />
 
-    <section>
-      <h2>Just call me</h2>
-      <h1>Leo</h1>
-    </section>
+    <img src="/static/lightning.svg" className="logo-type" />
+    <h1>{`امیرحسین اسلامی`}</h1>
 
-    <nav>
-      <a href="https://twitter.com/notquiteleo">Short Thoughts</a>
-      <Link href="/essays" prefetch><a>Long Thoughts</a></Link>
-      <a href="https://github.com/leo">Code</a>
-      <a href="https://dribbble.com/notquiteleo">Visuals</a>
-    </nav>
+    <ul>
+      {preparePosts().map(post => (
+        <li key={post.id}>
+          <Link href={post.url} prefetch>
+            <a>
+              <b>{post.title}</b>
+              <span>{parseJalaali(post.date).format('jD/jMMMM/jYYYY')}</span>
+            </a>
+          </Link>
+        </li>
+      ))}
+    </ul>
 
     <style jsx>
       {`
-      section h1 {
-        font-size: 57px;
-        left: 35px;
-        top: 35px;
-        font-weight: 300;
-        margin: 0;
-        position: absolute;
-        padding-right: 35px;
-        line-height: 1.2em;
-      }
-
-      section h1:focus {
-        outline: none;
-      }
-
-      section h2 {
-        display: none;
-      }
-
-      nav {
-        position: absolute;
-        left: 25px;
-        bottom: 27px;
-      }
-
-      nav a {
-        text-decoration: none;
-        color: #000;
-        font-size: 16px;
-        padding: 10px;
-        display: block;
-      }
-
-      @media (min-width: 768px) {
-        section {
-          position: absolute;
-          left: 0;
-          right: 0;
-          top: 0;
-          bottom: 0;
-          text-align: center;
-          display: flex;
-          height: inherit;
-          align-items: center;
-          justify-content: center;
-          user-select: none;
-          cursor: default;
+        ul {
+          margin: 0;
+          padding: 0 0 10px 0;
+          list-style: none;
         }
 
-        section h1 {
+        li {
+          margin: 25px 0;
+          text-decoration: none;
+        }
+
+        li:last-child {
+          margin-bottom: 0;
+        }
+
+        a {
+          text-decoration: none;
+          display: block;
+        }
+
+        b {
+          color: #000;
+          font-size: 17px;
+          display: inline-block;
+          font-weight: normal;
+          line-height: 21px;
+        }
+
+        span {
+          display: block;
+          color: #c1c1c1;
+          font-size: 16px;
+          margin-top: 4px;
+          margin-right: 8px;
+        }
+
+        h1 {
+          display: inline-block;
+          margin: 0px 0 40px 0;
+          font-size: 35px;
+          font-weight: 600;
+        }
+        .logo-type {
+          display: inline-block;
           position: relative;
-          display: inline-block;
-          left: auto;
-          top: auto;
-          padding-right: 0;
-          font-size: 73px;
-          color: #454545;
-          font-weight: 200;
+          top: 7px;
+          width: 60px;
+          height: 60px;
+          margin-left: 10px;
+          vertical-align: text-bottom;
         }
 
-        section h1::before,
-        section h1::after {
-          font-size: 32px;
-          line-height: 0;
-          height: 20px;
-          position: absolute;
-          font-weight: 300;
+        @media (min-width: 768px) {
+          a {
+            display: inline-block;
+          }
+
+          span {
+            display: inline-block;
+            margin-left: 20px;
+          }
+
+          b {
+            color: #5a5a5a;
+            font-size: 16px;
+          }
+
+          ul {
+            padding-bottom: 0;
+          }
+
+          a:hover b {
+            color: #000;
+          }
+
+          h1 {
+            font-size: 40px;
+            margin-top: 0;
+          }
         }
 
-        section h1::before {
-          content: '„';
-          top: 10px;
-          right: -15px;
-        }
+        @media (min-width: 992px) {
+          span {
+            opacity: 0;
+          }
 
-        section h1::after {
-          content: '„';
-          left: -15px;
-          bottom: 0;
-        }
+          li {
+            margin: 22px 0;
+          }
 
-        section h2 {
-          margin: 8px 40px 0 0;
-          display: inline-block;
-          font-weight: 200;
+          a:hover span {
+            opacity: 1;
+          }
         }
-
-        nav {
-          left: 30px;
-          right: 30px;
-          white-space: nowrap;
-          text-align: center;
-          bottom: 30px;
-          font-size: 0;
-        }
-
-        nav a {
-          font-size: 15px;
-          padding: 4px 10px;
-          color: #454545;
-          display: inline-block;
-          border-radius: 6px;
-          margin: 0 5px;
-          transition: all .2s;
-        }
-
-        nav a:hover {
-          background: #efefef;
-        }
-      }
-
-      @media (max-height: 390px) and (min-width: 768px) {
-        nav {
-          display: none;
-        }
-      }
-    `}
+      `}
     </style>
   </Page>
 )

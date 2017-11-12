@@ -29,34 +29,33 @@ export default ({ id, hasCover }) => {
 
   return (
     <aside>
-      <Back to="/essays" outsideCover={hasCover} />
+      <Back to="/" outsideCover={hasCover} />
 
       {hasCover && <Image src={coverURL} isCover />}
       <Title value={post.title} />
 
-      <h1 className={headingClass}>
-        {post.title}
-      </h1>
-      <span>
-        {date.format('MMMM Do YYYY')}
-      </span>
+      <h1 className={headingClass}>{post.title}</h1>
+      <span>{date.format('MMMM Do YYYY')}</span>
 
-      {post.title &&
+      {post.title && (
         <Head>
           <meta name="twitter:title" content={post.title} />
-        </Head>}
+        </Head>
+      )}
 
-      {post.description &&
+      {post.description && (
         <Head>
           <meta name="twitter:description" content={post.description} />
           <meta name="description" content={post.description} />
-        </Head>}
+        </Head>
+      )}
 
-      {hasCover &&
+      {hasCover && (
         <Head>
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:image" content={'https://leo.im' + coverURL} />
-        </Head>}
+        </Head>
+      )}
 
       <style jsx>
         {`

@@ -19,7 +19,7 @@ import { Code, InlineCode } from '../../components/code'
 import { Image } from '../../components/figure'
 import HR from '../../components/hr'
 
-export default () =>
+export default () => (
   <Post>
     <Meta id="electron-next" hasCover />
 
@@ -54,9 +54,7 @@ export default () =>
       </Link>!
     </P>
 
-    <P>
-      Of course, these achievements weren{`'`}t completely free of charge:
-    </P>
+    <P>Of course, these achievements weren{`'`}t completely free of charge:</P>
 
     <P>
       We spent hours convincing our fellow coworkers that a rewrite was worth
@@ -328,9 +326,7 @@ export default () =>
 
     <Code language="bash" syntax={bash}>{`npm start`}</Code>
 
-    <P>
-      If you{`'`}ve done everything right, a window should open:
-    </P>
+    <P>If you{`'`}ve done everything right, a window should open:</P>
 
     <Image
       src="/static/essays/2017/electron-next/without-next.png"
@@ -429,9 +425,7 @@ export default () =>
       code).
     </P>
 
-    <P>
-      On the first line of the file, we{`'`}ll import it:
-    </P>
+    <P>On the first line of the file, we{`'`}ll import it:</P>
 
     <Code
       language="javascript"
@@ -629,9 +623,7 @@ mainWindow.loadURL(entry)`}</Code>
 
     <Code language="bash" syntax={bash}>{`npm run dist`}</Code>
 
-    <P>
-      Isn{`'`}t that wonderfully magic? ✨
-    </P>
+    <P>Isn{`'`}t that wonderfully magic? ✨</P>
 
     <P>
       Starting today, you can use Next.js to build wonderful Electron
@@ -673,3 +665,4 @@ mainWindow.loadURL(entry)`}</Code>
       ways to make it even easier. Enjoy the rest of your day!
     </P>
   </Post>
+)

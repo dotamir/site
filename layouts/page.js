@@ -26,50 +26,52 @@ Router.onRouteChangeError = stopProgress
 
 // Log a sweet message in the browser
 // Showing the version and GitHub repository
-if (global.document) {
-  const info = [
-    `Version: ${version}`,
-    `You can find the code here: https://github.com/leo/site`,
-    `Have a great day! :)`
-  ]
+// if (global.document) {
+//   const info = [
+//     `Version: ${version}`,
+//     `You can find the code here: https://github.com/leo/site`,
+//     `Have a great day! :)`
+//   ]
 
-  for (const message of info) {
-    console.log(message)
-  }
-}
+//   for (const message of info) {
+//     console.log(message)
+//   }
+// }
 
-const viewSource = event => {
-  const allowed = ['P', 'SPAN', 'H1', 'H2', 'H3', 'PRE', 'CODE']
+// const viewSource = event => {
+//   const allowed = ['P', 'SPAN', 'H1', 'H2', 'H3', 'PRE', 'CODE']
 
-  if (allowed.includes(event.target.tagName)) {
-    return
-  }
+//   if (allowed.includes(event.target.tagName)) {
+//     return
+//   }
 
-  document.location = 'https://github.com/leo/site'
-  event.preventDefault()
-}
+//   document.location = 'https://github.com/dotamir/site'
+//   event.preventDefault()
+// }
 
-export default ({ children }) =>
-  <main onDoubleClick={viewSource}>
+export default ({ children }) => (
+  <main>
     <Head>
       <link
         rel="mask-icon"
-        href="http://leo.im/static/lightning.svg"
+        href="http://dotam.ir/static/lightning.svg"
         color="#000000"
       />
       <link rel="apple-touch-icon" href="/static/touch-icon.png" />
       <link rel="icon" href="/static/touch-icon.png" type="image/png" />
+      <link
+        href="https://cdn.rawgit.com/rastikerdar/sahel-font/v1.0.0-alpha9/dist/font-face.css"
+        rel="stylesheet"
+        type="text/css"
+      />
 
       <meta
         name="viewport"
         content="width=device-width, initial-scale=1, user-scalable=no"
       />
-      <meta
-        name="description"
-        content="A teenagers view on web development and intuitive UI design."
-      />
-      <meta name="twitter:site" content="@notquiteleo" />
-      <meta name="twitter:creator" content="@notquiteleo" />
+      <meta name="description" content="A Front-End Developer" />
+      <meta name="twitter:site" content="@dotamir" />
+      <meta name="twitter:creator" content="@dotamir" />
     </Head>
 
     {children}
@@ -77,11 +79,12 @@ export default ({ children }) =>
     <style jsx global>
       {`
         body {
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
+          font-family: 'Sahel', -apple-system, BlinkMacSystemFont, Segoe UI,
+            Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+            Helvetica Neue, sans-serif;
           margin: 0;
           -webkit-font-smoothing: antialiased;
+          direction: rtl;
         }
 
         html,
@@ -123,7 +126,7 @@ export default ({ children }) =>
           width: 100px;
           height: 100%;
           box-shadow: 0 0 10px #4492ff, 0 0 5px #4492ff;
-          opacity: 1.0;
+          opacity: 1;
           transform: rotate(3deg) translate(0px, -4px);
         }
 
@@ -135,3 +138,4 @@ export default ({ children }) =>
       `}
     </style>
   </main>
+)
