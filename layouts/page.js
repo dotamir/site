@@ -86,6 +86,16 @@ export default ({ children }) => (
           -webkit-font-smoothing: antialiased;
           direction: rtl;
         }
+        ::selection {
+          text-shadow: none;
+          color: #333;
+          background: #ff9;
+        }
+        ::-moz-selection {
+          text-shadow: none;
+          color: #333;
+          background: #ff9;
+        }
 
         html,
         body {

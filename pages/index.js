@@ -15,7 +15,7 @@ import Page from '../layouts/page'
 import posts from '../data/essays'
 
 const parseDate = date => moment(date, 'DD/MM/YYYY')
-const parseJalaali = date => momentJal(date, 'YYYY/jM/jD')
+const parseJalaali = date => momentJal(date, 'DD/MM/YYYY')
 
 // Assign a URL to each post and
 // sort them by date (most recent one first)
@@ -75,9 +75,9 @@ export default () => (
 
         b {
           color: #000;
-          font-size: 17px;
+          font-size: 25px;
           display: inline-block;
-          font-weight: normal;
+          font-weight: 600;
           line-height: 21px;
         }
 
@@ -117,7 +117,7 @@ export default () => (
 
           b {
             color: #5a5a5a;
-            font-size: 16px;
+            font-size: 25px;
           }
 
           ul {

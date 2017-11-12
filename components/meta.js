@@ -1,6 +1,8 @@
 // Packages
 import Head from 'next/head'
 import moment from 'moment'
+import momentJal from 'moment-jalaali'
+momentJal.loadPersian({ usePersianDigits: true, dialect: 'persian-modern' })
 
 // Other
 import posts from '../data/essays'
@@ -12,6 +14,7 @@ import { Image } from './figure'
 
 // Make date easily readable
 const parseDate = date => moment(date, 'DD-MM-YYYY')
+const parseJalaali = date => momentJal(date, 'DD/MM/YYYY')
 
 // Find post using its identifier
 const findPost = id => posts.find(post => post.id === id)
@@ -35,7 +38,7 @@ export default ({ id, hasCover }) => {
       <Title value={post.title} />
 
       <h1 className={headingClass}>{post.title}</h1>
-      <span>{date.format('MMMM Do YYYY')}</span>
+      <span>{parseJalaali(post.date).format('jD/jMMMM/jYYYY')}</span>
 
       {post.title && (
         <Head>
@@ -60,10 +63,10 @@ export default ({ id, hasCover }) => {
       <style jsx>
         {`
           h1 {
-            font-weight: 500;
+            font-weight: 600;
             margin: 0 0 8px 0;
             font-size: 24px;
-            padding-right: 55px;
+            // padding-right: 55px;
             line-height: 1.3em;
           }
 
@@ -73,7 +76,7 @@ export default ({ id, hasCover }) => {
 
           span {
             color: #7c7c7c;
-            font-size: 13px;
+            font-size: 16px;
           }
 
           aside {
@@ -88,7 +91,7 @@ export default ({ id, hasCover }) => {
             }
 
             span {
-              font-size: 14px;
+              font-size: 16px;
             }
           }
         `}
