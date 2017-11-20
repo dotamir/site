@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "next",
-    "build": "next build",
+    "build": "next build && next export",
+    "deploy": "next build && next export -o blog && git checkout -- blog/CNAME && git checkout -- blog/.nojekyll && git add blog && git commit -m \"chore: regen site\" && git push origin master",
     "start": "next start",
     "test": "eslint .",
     "precommit": "lint-staged"
@@ -43,13 +44,9 @@
   },
   "lint-staged": {
     "*.js": [
-      "npm run test",
       "prettier --single-quote --no-semi --write",
       "git add"
     ]
-  },
-  "now": {
-    "alias": "dotam.ir"
   },
   "dependencies": {
     "is-absolute-url": "2.1.0",
