@@ -1,6 +1,6 @@
 # dotamir
 
-[![Build Status](https://travis-ci.org/leo/site.svg?branch=master)](https://travis-ci.org/leo/site)
+[![Build Status](https://travis-ci.org/dotamir/site.svg?branch=master)](https://travis-ci.org/dotamir/site)
 
 Where the magic happens! 🎩
 
