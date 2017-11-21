@@ -122,7 +122,7 @@ window.__NEXT_REGISTER_PAGE('/2017/new-face', function() {
           o = r(u),
           d = a(89),
           c = r(d)
-        t.default = (0, o.default)({ id: 'broken', hasCover: !1 })(
+        t.default = (0, o.default)({ id: 'new-face', hasCover: !1 })(
           (0, i.default)(c.default, function(e) {
             return l.default.createElement(
               'div',
@@ -372,10 +372,10 @@ window.__NEXT_REGISTER_PAGE('/2017/new-face', function() {
         var E = function(e) {
             return (0, c.default)(e, 'DD-MM-YYYY')
           },
-          y = function(e) {
+          w = function(e) {
             return (0, m.default)(e, 'DD/MM/YYYY')
           },
-          w = function(e) {
+          y = function(e) {
             return x.default.find(function(t) {
               return t.id === e
             })
@@ -383,7 +383,7 @@ window.__NEXT_REGISTER_PAGE('/2017/new-face', function() {
         t.default = function(e) {
           var t = e.id,
             a = e.hasCover,
-            r = w(t),
+            r = y(t),
             n = a ? 'has-cover' : '',
             s = E(r.date),
             u = void 0
@@ -405,7 +405,7 @@ window.__NEXT_REGISTER_PAGE('/2017/new-face', function() {
               i.default.createElement(
                 'span',
                 { className: 'jsx-3567245992' },
-                y(r.date).format('jD/jMMMM/jYYYY')
+                w(r.date).format('jD/jMMMM/jYYYY')
               ),
               r.title &&
                 i.default.createElement(

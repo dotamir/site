@@ -4,7 +4,6 @@
   "scripts": {
     "dev": "next",
     "build": "next build && next export -o docs",
-    "deploy": "next build && next export -o blog && git checkout -- blog/CNAME && git checkout -- blog/.nojekyll && git add blog && git commit -m \"chore: regen site\" && git push origin master",
     "start": "next start",
     "test": "eslint .",
     "precommit": "lint-staged"

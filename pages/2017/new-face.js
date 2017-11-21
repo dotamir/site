@@ -3,7 +3,7 @@ import asPost from '../../layouts/post'
 import components from '../../components'
 
 export default asPost({
-  id: 'broken',
+  id: 'new-face',
   hasCover: false
 })(markdown(components)`
 یه لحظه به خودم اومدم دیدم که هشت ماه داره می‌گذره و اصلا انگار نه انگار که بلاگ دارم یا گفته بودم می‌میخوام بنویسم :/
