@@ -38,7 +38,7 @@ export default ({ id, hasCover }) => {
       <Title value={post.title} />
 
       <h1 className={headingClass}>{post.title}</h1>
-      <span>{parseJalaali(post.date).format('jD/jMMMM/jYYYY')}</span>
+      <span>{parseJalaali(post.date).format('jD jMMMM jYYYY')}</span>
 
       {post.title && (
         <Head>

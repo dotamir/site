@@ -2,43 +2,43 @@ window.__NEXT_REGISTER_PAGE('/2017/new-face', function() {
   var comp = (module.exports = webpackJsonp(
     [2],
     {
-      22: function(e, t, a) {
+      23: function(e, t, a) {
         'use strict'
         function r(e) {
           return e && e.__esModule ? e : { default: e }
         }
         Object.defineProperty(t, '__esModule', { value: !0 })
-        var n = a(2),
+        var n = a(3),
           l = r(n),
-          s = a(1),
+          s = a(2),
           i = r(s)
         t.default = function(e) {
           var t = e.children
           return i.default.createElement(
             'p',
-            { className: 'jsx-195929361' },
+            { className: 'jsx-2234123320' },
             t,
             i.default.createElement(l.default, {
-              styleId: '195929361',
+              styleId: '2234123320',
               css: [
-                'p.jsx-195929361{font-size:1.055rem;line-height:1.818rem;word-spacing:-0.05rem;-webkit-letter-spacing:-0.004rem;-moz-letter-spacing:-0.004rem;-ms-letter-spacing:-0.004rem;letter-spacing:-0.004rem;margin:22px 0;}'
+                'p.jsx-2234123320{font-size:1.1em;line-height:2em;word-spacing:-0.05rem;-webkit-letter-spacing:-0.004rem;-moz-letter-spacing:-0.004rem;-ms-letter-spacing:-0.004rem;letter-spacing:-0.004rem;margin:22px 0;}'
               ]
             })
           )
         }
       },
-      40: function(e, t, a) {
+      41: function(e, t, a) {
         'use strict'
         function r(e) {
           return e && e.__esModule ? e : { default: e }
         }
         Object.defineProperty(t, '__esModule', { value: !0 }),
           (t.Embed = t.Image = void 0)
-        var n = a(2),
+        var n = a(3),
           l = r(n),
-          s = a(1),
+          s = a(2),
           i = r(s),
-          u = a(39),
+          u = a(40),
           o = r(u),
           d = function(e, t) {
             var a = []
@@ -105,59 +105,19 @@ window.__NEXT_REGISTER_PAGE('/2017/new-face', function() {
           }
         ;(t.default = f), (t.Image = f), (t.Embed = c)
       },
-      455: function(e, t, a) {
-        e.exports = a(456)
-      },
-      456: function(e, t, a) {
+      55: function(e, t, a) {
         'use strict'
         function r(e) {
           return e && e.__esModule ? e : { default: e }
         }
         Object.defineProperty(t, '__esModule', { value: !0 })
-        var n = a(1),
+        var n = a(3),
           l = r(n),
-          s = a(79),
+          s = a(2),
           i = r(s),
-          u = a(80),
+          u = a(89),
           o = r(u),
-          d = a(89),
-          c = r(d)
-        t.default = (0, o.default)({ id: 'new-face', hasCover: !1 })(
-          (0, i.default)(c.default, function(e) {
-            return l.default.createElement(
-              'div',
-              { className: '_markdown_' },
-              l.default.createElement(
-                e.p,
-                null,
-                'یه لحظه به خودم اومدم دیدم که هشت ماه داره می‌گذره و اصلا انگار نه انگار که بلاگ دارم یا گفته بودم می‌میخوام بنویسم :/ تصمیم گرفتم که یه شکل جدید بهش بدم و شروع کنم به نوشتن! از قیافه جدیدش خوشم میاد، همونطوری که دوست دارم ساده و باحالِ . تو نوشته‌های جدیدم از تجربه‌های کاری گرفته تا تجربه‌های روزمره رو سعی می‌کنم بنویسم و محلی درست کنم برای وقتی که می‌خوام یه نگاه به گذشته بکنم بتونم اینجا رو نگاه کنم و ببینم که چطور بوده  و چه خبر بوده. کامنت ها رو برداشتم و دوست دارم اینجا فقط من نویسنده باشم و امیدوارم که تو بوق و کرنا نکنید که آزادی بیان رو نقض کردم! :دی نه فقط اینطوری بیشتر برام جذابیت داره و اینکه شاید یه روزی کامنت‌ها رو دوباره گذاشتم. معلوم نیست . فکر کنم همین توضیح‌های کوتاه کافی باشه و بریم که ببینیم چی میشه در ادامه.'
-              ),
-              l.default.createElement(
-                e.ul,
-                null,
-                l.default.createElement(
-                  e.li,
-                  null,
-                  'امیرحسین اسلامی، ۲۹ آبان ۱۳۹۶'
-                )
-              )
-            )
-          })
-        )
-      },
-      53: function(e, t, a) {
-        'use strict'
-        function r(e) {
-          return e && e.__esModule ? e : { default: e }
-        }
-        Object.defineProperty(t, '__esModule', { value: !0 })
-        var n = a(2),
-          l = r(n),
-          s = a(1),
-          i = r(s),
-          u = a(88),
-          o = r(u),
-          d = a(52),
+          d = a(54),
           c = r(d),
           f = function(e) {
             return '#' === e.charAt(0)
@@ -203,15 +163,15 @@ window.__NEXT_REGISTER_PAGE('/2017/new-face', function() {
           )
         }
       },
-      54: function(e, t, a) {
+      56: function(e, t, a) {
         'use strict'
         function r(e) {
           return e && e.__esModule ? e : { default: e }
         }
         Object.defineProperty(t, '__esModule', { value: !0 })
-        var n = a(2),
+        var n = a(3),
           l = r(n),
-          s = a(1),
+          s = a(2),
           i = r(s)
         t.default = function() {
           return i.default.createElement(
@@ -226,7 +186,47 @@ window.__NEXT_REGISTER_PAGE('/2017/new-face', function() {
           )
         }
       },
-      79: function(e, t, a) {
+      580: function(e, t, a) {
+        e.exports = a(581)
+      },
+      581: function(e, t, a) {
+        'use strict'
+        function r(e) {
+          return e && e.__esModule ? e : { default: e }
+        }
+        Object.defineProperty(t, '__esModule', { value: !0 })
+        var n = a(2),
+          l = r(n),
+          s = a(80),
+          i = r(s),
+          u = a(81),
+          o = r(u),
+          d = a(90),
+          c = r(d)
+        t.default = (0, o.default)({ id: 'new-face', hasCover: !1 })(
+          (0, i.default)(c.default, function(e) {
+            return l.default.createElement(
+              'div',
+              { className: '_markdown_' },
+              l.default.createElement(
+                e.p,
+                null,
+                'یه لحظه به خودم اومدم دیدم که هشت ماه داره می‌گذره و اصلا انگار نه انگار که بلاگ دارم یا گفته بودم می‌میخوام بنویسم :/ تصمیم گرفتم که یه شکل جدید بهش بدم و شروع کنم به نوشتن! از قیافه جدیدش خوشم میاد، همونطوری که دوست دارم ساده و باحالِ . تو نوشته‌های جدیدم از تجربه‌های کاری گرفته تا تجربه‌های روزمره رو سعی می‌کنم بنویسم و محلی درست کنم برای وقتی که می‌خوام یه نگاه به گذشته بکنم بتونم اینجا رو نگاه کنم و ببینم که چطور بوده  و چه خبر بوده. کامنت ها رو برداشتم و دوست دارم اینجا فقط من نویسنده باشم و امیدوارم که تو بوق و کرنا نکنید که آزادی بیان رو نقض کردم! :دی نه فقط اینطوری بیشتر برام جذابیت داره و اینکه شاید یه روزی کامنت‌ها رو دوباره گذاشتم. معلوم نیست . فکر کنم همین توضیح‌های کوتاه کافی باشه و بریم که ببینیم چی میشه در ادامه.'
+              ),
+              l.default.createElement(
+                e.ul,
+                null,
+                l.default.createElement(
+                  e.li,
+                  null,
+                  'امیرحسین اسلامی، ۲۹ آبان ۱۳۹۶'
+                )
+              )
+            )
+          })
+        )
+      },
+      80: function(e, t, a) {
         'use strict'
         var r =
             Object.assign ||
@@ -280,17 +280,17 @@ window.__NEXT_REGISTER_PAGE('/2017/new-face', function() {
           }
         e.exports = n
       },
-      80: function(e, t, a) {
+      81: function(e, t, a) {
         'use strict'
         function r(e) {
           return e && e.__esModule ? e : { default: e }
         }
         Object.defineProperty(t, '__esModule', { value: !0 })
-        var n = a(1),
+        var n = a(2),
           l = r(n),
-          s = a(81),
+          s = a(82),
           i = r(s),
-          u = a(83),
+          u = a(84),
           o = r(u)
         t.default = function(e) {
           return function(t) {
@@ -305,17 +305,17 @@ window.__NEXT_REGISTER_PAGE('/2017/new-face', function() {
           }
         }
       },
-      81: function(e, t, a) {
+      82: function(e, t, a) {
         'use strict'
         function r(e) {
           return e && e.__esModule ? e : { default: e }
         }
         Object.defineProperty(t, '__esModule', { value: !0 })
-        var n = a(2),
+        var n = a(3),
           l = r(n),
-          s = a(1),
+          s = a(2),
           i = r(s),
-          u = a(82),
+          u = a(83),
           o = r(u)
         t.default = function(e) {
           var t = e.children
@@ -324,13 +324,13 @@ window.__NEXT_REGISTER_PAGE('/2017/new-face', function() {
             null,
             i.default.createElement(
               'article',
-              { className: 'jsx-1743236950' },
+              { className: 'jsx-1154692212' },
               t
             ),
             i.default.createElement(l.default, {
-              styleId: '1703018720',
+              styleId: '2177126786',
               css: [
-                'article.jsx-1743236950{margin:0 auto;word-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;-ms-hyphens:auto;hyphens:auto;max-width:620px;}'
+                'article.jsx-1154692212{margin:0 auto;word-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;-ms-hyphens:auto;hyphens:auto;max-width:780px;color:#282828;}'
               ]
             }),
             i.default.createElement(l.default, {
@@ -342,29 +342,29 @@ window.__NEXT_REGISTER_PAGE('/2017/new-face', function() {
           )
         }
       },
-      83: function(e, t, a) {
+      84: function(e, t, a) {
         'use strict'
         function r(e) {
           return e && e.__esModule ? e : { default: e }
         }
         Object.defineProperty(t, '__esModule', { value: !0 })
-        var n = a(2),
+        var n = a(3),
           l = r(n),
-          s = a(1),
+          s = a(2),
           i = r(s),
-          u = a(38),
+          u = a(39),
           o = r(u),
-          d = a(0),
+          d = a(1),
           c = r(d),
-          f = a(84),
+          f = a(85),
           m = r(f),
-          p = a(85),
+          p = a(86),
           x = r(p),
-          h = a(86),
+          h = a(87),
           j = r(h),
-          g = a(39),
+          g = a(40),
           v = r(g),
-          b = a(40)
+          b = a(41)
         m.default.loadPersian({
           usePersianDigits: !0,
           dialect: 'persian-modern'
@@ -405,7 +405,7 @@ window.__NEXT_REGISTER_PAGE('/2017/new-face', function() {
               i.default.createElement(
                 'span',
                 { className: 'jsx-3567245992' },
-                w(r.date).format('jD/jMMMM/jYYYY')
+                w(r.date).format('jD jMMMM jYYYY')
               ),
               r.title &&
                 i.default.createElement(
@@ -461,30 +461,30 @@ window.__NEXT_REGISTER_PAGE('/2017/new-face', function() {
           )
         }
       },
-      88: function(e, t, a) {
+      89: function(e, t, a) {
         'use strict'
         e.exports = function(e) {
           if ('string' != typeof e) throw new TypeError('Expected a string')
           return /^[a-z][a-z0-9+.-]*:/.test(e)
         }
       },
-      89: function(e, t, a) {
+      90: function(e, t, a) {
         'use strict'
         function r(e) {
           return e && e.__esModule ? e : { default: e }
         }
         Object.defineProperty(t, '__esModule', { value: !0 })
-        var n = a(22),
+        var n = a(23),
           l = r(n),
-          s = a(90),
-          i = a(53),
+          s = a(91),
+          i = a(55),
           u = r(i),
-          o = a(91),
+          o = a(92),
           d = r(o),
-          c = a(40),
-          f = a(54),
+          c = a(41),
+          f = a(56),
           m = r(f),
-          p = a(92)
+          p = a(93)
         t.default = {
           p: l.default,
           ul: s.UL,
@@ -500,16 +500,16 @@ window.__NEXT_REGISTER_PAGE('/2017/new-face', function() {
           h4: p.H4
         }
       },
-      90: function(e, t, a) {
+      91: function(e, t, a) {
         'use strict'
         function r(e) {
           return e && e.__esModule ? e : { default: e }
         }
         Object.defineProperty(t, '__esModule', { value: !0 }),
           (t.LI = t.UL = t.OL = void 0)
-        var n = a(2),
+        var n = a(3),
           l = r(n),
-          s = a(1),
+          s = a(2),
           i = r(s),
           u = function(e) {
             var t = e.children
@@ -561,17 +561,17 @@ window.__NEXT_REGISTER_PAGE('/2017/new-face', function() {
           }
         ;(t.OL = u), (t.UL = o), (t.LI = d)
       },
-      91: function(e, t, a) {
+      92: function(e, t, a) {
         'use strict'
         function r(e) {
           return e && e.__esModule ? e : { default: e }
         }
         Object.defineProperty(t, '__esModule', { value: !0 })
-        var n = a(2),
+        var n = a(3),
           l = r(n),
-          s = a(1),
+          s = a(2),
           i = r(s),
-          u = a(22),
+          u = a(23),
           o = r(u)
         t.default = function(e) {
           var t = e.by,
@@ -601,19 +601,19 @@ window.__NEXT_REGISTER_PAGE('/2017/new-face', function() {
           )
         }
       },
-      92: function(e, t, a) {
+      93: function(e, t, a) {
         'use strict'
         function r(e) {
           return e && e.__esModule ? e : { default: e }
         }
         for (
-          var n = a(21),
+          var n = a(22),
             l = r(n),
-            s = a(2),
+            s = a(3),
             i = r(s),
-            u = a(1),
+            u = a(2),
             o = r(u),
-            d = a(93),
+            d = a(94),
             c = r(d),
             f = function(e) {
               var t = e.level,
@@ -688,7 +688,7 @@ window.__NEXT_REGISTER_PAGE('/2017/new-face', function() {
             t[a] = n
           })(m)
       },
-      93: function(e, t, a) {
+      94: function(e, t, a) {
         !(function(t, a) {
           e.exports = a()
         })(0, function() {
@@ -705,7 +705,7 @@ window.__NEXT_REGISTER_PAGE('/2017/new-face', function() {
         })
       }
     },
-    [455]
+    [580]
   ))
   return { page: comp.default }
 })

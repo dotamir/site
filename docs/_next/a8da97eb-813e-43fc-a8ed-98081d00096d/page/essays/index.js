@@ -2,14 +2,14 @@ window.__NEXT_REGISTER_PAGE('/essays', function() {
   var comp = (module.exports = webpackJsonp(
     [8],
     {
-      457: function(o, t, e) {
-        o.exports = e(458)
+      582: function(o, t, e) {
+        o.exports = e(583)
       },
-      458: function(o, t, e) {
+      583: function(o, t, e) {
         'use strict'
       }
     },
-    [457]
+    [582]
   ))
   return { page: comp.default }
 })

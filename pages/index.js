@@ -44,7 +44,7 @@ export default () => (
           <Link href={post.url} prefetch>
             <a>
               <b>{post.title}</b>
-              <span>{parseJalaali(post.date).format('jD/jMMMM/jYYYY')}</span>
+              <span>{parseJalaali(post.date).format('jD jMMMM jYYYY')}</span>
             </a>
           </Link>
         </li>
@@ -116,7 +116,7 @@ export default () => (
           }
 
           b {
-            color: #5a5a5a;
+            color: #282828;
             font-size: 25px;
           }
 

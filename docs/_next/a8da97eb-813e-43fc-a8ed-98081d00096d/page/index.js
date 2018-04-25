@@ -2,33 +2,33 @@ window.__NEXT_REGISTER_PAGE('/', function() {
   var comp = (module.exports = webpackJsonp(
     [7],
     {
-      459: function(e, t, a) {
-        e.exports = a(460)
+      584: function(e, t, a) {
+        e.exports = a(585)
       },
-      460: function(e, t, a) {
+      585: function(e, t, a) {
         'use strict'
         function l(e) {
           return e && e.__esModule ? e : { default: e }
         }
         Object.defineProperty(t, '__esModule', { value: !0 })
-        var n = a(28),
+        var n = a(29),
           i = l(n),
-          s = a(2),
+          s = a(3),
           o = l(s),
-          r = a(1),
+          r = a(2),
           c = l(r),
-          d = a(0),
+          d = a(1),
           u = l(d),
-          p = a(84),
+          p = a(85),
           x = l(p),
-          f = a(52),
+          f = a(54),
           m = l(f),
-          j = a(86),
+          j = a(87),
           g = l(j),
-          h = a(39),
-          b = (l(h), a(82)),
+          h = a(40),
+          b = (l(h), a(83)),
           y = l(b),
-          Y = a(85),
+          Y = a(86),
           E = l(Y)
         x.default.loadPersian({
           usePersianDigits: !0,
@@ -57,35 +57,35 @@ window.__NEXT_REGISTER_PAGE('/', function() {
             c.default.createElement(g.default, null),
             c.default.createElement('img', {
               src: '/static/lightning.svg',
-              className: 'jsx-1488477924 logo-type'
+              className: 'jsx-2461830353 logo-type'
             }),
             c.default.createElement(
               'h1',
-              { className: 'jsx-1488477924' },
+              { className: 'jsx-2461830353' },
               'امیرحسین اسلامی'
             ),
             c.default.createElement(
               'ul',
-              { className: 'jsx-1488477924' },
+              { className: 'jsx-2461830353' },
               v().map(function(e) {
                 return c.default.createElement(
                   'li',
-                  { key: e.id, className: 'jsx-1488477924' },
+                  { key: e.id, className: 'jsx-2461830353' },
                   c.default.createElement(
                     m.default,
                     { href: e.url, prefetch: !0 },
                     c.default.createElement(
                       'a',
-                      { className: 'jsx-1488477924' },
+                      { className: 'jsx-2461830353' },
                       c.default.createElement(
                         'b',
-                        { className: 'jsx-1488477924' },
+                        { className: 'jsx-2461830353' },
                         e.title
                       ),
                       c.default.createElement(
                         'span',
-                        { className: 'jsx-1488477924' },
-                        k(e.date).format('jD/jMMMM/jYYYY')
+                        { className: 'jsx-2461830353' },
+                        k(e.date).format('jD jMMMM jYYYY')
                       )
                     )
                   )
@@ -93,25 +93,25 @@ window.__NEXT_REGISTER_PAGE('/', function() {
               })
             ),
             c.default.createElement(o.default, {
-              styleId: '1488477924',
+              styleId: '2461830353',
               css: [
-                'ul.jsx-1488477924{margin:0;padding:0 0 10px 0;list-style:none;}',
-                'li.jsx-1488477924{margin:25px 0;text-decoration:none;}',
-                'li.jsx-1488477924:last-child{margin-bottom:0;}',
-                'a.jsx-1488477924{text-decoration:none;display:block;}',
-                'b.jsx-1488477924{color:#000;font-size:25px;display:inline-block;font-weight:600;line-height:21px;}',
-                'span.jsx-1488477924{display:block;color:#c1c1c1;font-size:16px;margin-top:4px;margin-right:8px;}',
-                'h1.jsx-1488477924{display:inline-block;margin:0px 0 40px 0;font-size:35px;font-weight:600;}',
-                '.logo-type.jsx-1488477924{display:inline-block;position:relative;top:7px;width:60px;height:60px;margin-left:10px;vertical-align:text-bottom;}',
-                '@media (min-width:768px){a.jsx-1488477924{display:inline-block;}span.jsx-1488477924{display:inline-block;margin-left:20px;}b.jsx-1488477924{color:#5a5a5a;font-size:25px;}ul.jsx-1488477924{padding-bottom:0;}a.jsx-1488477924:hover b.jsx-1488477924{color:#000;}h1.jsx-1488477924{font-size:40px;margin-top:0;}}',
-                '@media (min-width:992px){span.jsx-1488477924{opacity:0;}li.jsx-1488477924{margin:22px 0;}a.jsx-1488477924:hover span.jsx-1488477924{opacity:1;}}'
+                'ul.jsx-2461830353{margin:0;padding:0 0 10px 0;list-style:none;}',
+                'li.jsx-2461830353{margin:25px 0;text-decoration:none;}',
+                'li.jsx-2461830353:last-child{margin-bottom:0;}',
+                'a.jsx-2461830353{text-decoration:none;display:block;}',
+                'b.jsx-2461830353{color:#000;font-size:25px;display:inline-block;font-weight:600;line-height:21px;}',
+                'span.jsx-2461830353{display:block;color:#c1c1c1;font-size:16px;margin-top:4px;margin-right:8px;}',
+                'h1.jsx-2461830353{display:inline-block;margin:0px 0 40px 0;font-size:35px;font-weight:600;}',
+                '.logo-type.jsx-2461830353{display:inline-block;position:relative;top:7px;width:60px;height:60px;margin-left:10px;vertical-align:text-bottom;}',
+                '@media (min-width:768px){a.jsx-2461830353{display:inline-block;}span.jsx-2461830353{display:inline-block;margin-left:20px;}b.jsx-2461830353{color:#282828;font-size:25px;}ul.jsx-2461830353{padding-bottom:0;}a.jsx-2461830353:hover b.jsx-2461830353{color:#000;}h1.jsx-2461830353{font-size:40px;margin-top:0;}}',
+                '@media (min-width:992px){span.jsx-2461830353{opacity:0;}li.jsx-2461830353{margin:22px 0;}a.jsx-2461830353:hover span.jsx-2461830353{opacity:1;}}'
               ]
             })
           )
         }
       }
     },
-    [459]
+    [584]
   ))
   return { page: comp.default }
 })
